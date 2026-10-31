@@ -10,4 +10,4 @@ def top_ten(subreddit):
     url = "https://www.reddit.com/r/{}/hot.json".format(subreddit)
     requests.get(url, headers=HEADERS, params={"limit": 10},
                  allow_redirects=False)
-    print("OK")
+    print("OK", end="")
